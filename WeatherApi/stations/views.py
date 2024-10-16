@@ -91,7 +91,7 @@ def stations(request):
             
             station_model = Station()
             station_model.update_login(login_username)
-            user_data, status = station_model.login_check(login_username, login_password, required_role='Teacher')
+            user_data, status = station_model.login_check(login_username, login_password, required_role='Sensor')
             
 
             if status != 200:
